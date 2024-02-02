@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 
 const Funcionarios = lazy(() => import("../pages/Funcionarios"));
 const FuncionariosDetails = lazy(() => import("../pages/funcionariosDetails"));
-const TestePage = lazy(() => import("../pages/teste"));
 
 const Routers = () => {
   return (
@@ -17,7 +16,6 @@ const Routers = () => {
       <Routes>
         <Route path="/" element={<Funcionarios />} />
         <Route path="/funcionarios" element={<Funcionarios />} />
-        <Route path="/TestePage" element={<TestePage/>} />
         <Route path="/funcionarios/:id" element={<FuncionariosDetails />} />
       </Routes>
     </Suspense>
